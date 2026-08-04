@@ -9,35 +9,39 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = SkyBlue,
+    secondary = GrassGreen,
+    tertiary = SunnyYellow,
+    background = Color(0xFF121212),
+    surface = Color(0xFF1E1E1E),
+    onPrimary = Color.Black,
+    onSecondary = Color.Black,
+    onTertiary = Color.Black
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
+    primary = SkyBlue,
     onPrimary = Color.White,
+    primaryContainer = SkyBlue.copy(alpha = 0.2f),
+    secondary = GrassGreen,
     onSecondary = Color.White,
+    secondaryContainer = GrassGreen.copy(alpha = 0.2f),
+    tertiary = BrightOrange,
     onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    tertiaryContainer = SunnyYellow.copy(alpha = 0.4f),
+    background = Color(0xFFF0F9FF), // Very soft blue background
+    surface = Color.White
 )
 
 @Composable
 fun CP3406_CP5603UtilityAppStarterTemplateTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Set to false by default for consistent educational branding
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
