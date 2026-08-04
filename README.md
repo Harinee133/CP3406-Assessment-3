@@ -40,6 +40,6 @@ The project includes a suite of unit and instrumented tests to ensure stability:
 ---
 
 ## 📚 Course Details
-**Student**: [Your Name/ID]
+**Student**: Harinee 14907667
 **Subject**: CP3406/CP5307 Assessment 3
-**Template Source**: CP3406 Utility App Starter Template
+
