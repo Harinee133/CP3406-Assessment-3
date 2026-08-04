@@ -1,55 +1,45 @@
-# Utility App Starter – CP3406 / CP5307
+# MOE Primary Learning Hub 🎓
 
-This is a basic Android app template for **Assessment 1: Utility App** in CP3406/CP5603..  
-It provides the structure for a simple tabular UI using **Jetpack Compose** and **Material Design 3**.
+A professional educational Android application built with Jetpack Compose, designed to align with the **Singapore MOE Syllabus (2021-2025)** for Primary 1–6.
+
+## 🌟 Key Features
+- **Comprehensive Subject Coverage**: Mathematics (Numerical & Logic), English (STELLAR Literacy), and Science (Inquiry-based).
+- **Choice-Based Learning**: Students can choose their preferred study method: Quiz Quest, Memory Puzzles, Smart Flashcards, or Interactive Labs.
+- **Ethical Architecture**: 
+  - **Privacy-First**: Zero data collection. All progress is stored locally via Room Database (GDPR-K & COPPA compliant).
+  - **Inclusion-Focused**: High-contrast UI and 48dp+ touch targets for accessibility.
+  - **Offline-Ready**: Local fallback question banks to bridge the "Digital Divide."
+- **Gamified Progress**: XP and Trophy tracking system with advanced data aggregation (Aggregate SQL Queries).
+
+## 🛠️ Technical Stack
+- **UI**: Jetpack Compose (Material 3) with custom animations and responsive design (Phone/Tablet).
+- **Architecture**: Clean Architecture (MVVM) with Repository pattern.
+- **Dependency Injection**: Hilt for modularity and testability.
+- **Persistence**: Room Database for secure local storage.
+- **Networking**: Retrofit & GSON for external API integration with robust error handling.
+- **Testing**: JUnit 4 for logic (MockK) and Compose UI Tests (Instrumented) for the GUI.
+
+## 🧪 Testing Results
+The project includes a suite of unit and instrumented tests to ensure stability:
+- **Unit Tests**: Verifies ViewModel logic and flow state. (Status: **Passed**)
+- **Instrumented Tests**: Verifies navigation flow and UI semantic integrity. (Status: **Passed**)
+
+## 📜 Ethical Alignment (ACS Code of Ethics)
+1. **Primacy of Public Interest**: Implemented local storage to protect child data privacy.
+2. **Enhancement of Quality of Life**: Added haptic and auditory feedback for inclusive sensory reinforcement.
+3. **Honesty**: Clear curriculum transparency in the "Parents & Help" section.
+4. **Competence**: Followed modern Android development standards (MVVM, DI, Compose).
 
 ---
 
 ## Getting Started
-
-### How to Run
-1. Clone or download this repo  
-2. Open in Android Studio  
-3. Run on an emulator or physical device (API 26+ recommended)  
+1.  Open in **Android Studio**.
+2.  Go to **Play & Learn** to explore the MOE modules.
+3.  Use the **Parents & Help** section for curriculum details.
 
 ---
 
-## Composables
-
-### UtilityApp()
-- Contains the screen layout using a Scaffold
-- Toggles content between Utility and Settings
-
-### UtilityScreen()
-- Displays a simple counter (replace with your utility logic)  
-- Includes a button to increment the counter
-
-### SettingsScreen()
-- Placeholder for user preferences or configuration  
-- Can be extended to modify main screen behavior (e.g., theme, units, limits)  
-
----
-
-## Key Concepts Covered
-
-| Week | Concept                        | Used In                          |
-|------|--------------------------------|----------------------------------|
-| 1    | Kotlin + Android Studio         | MainActivity.kt |
-| 2    | Jetpack Compose Layouts         | UtilityApp(), UtilityScreen(), SettingsScreen()   |
-| 3    | Material Design 3               | CP3406_CP5603UtilityAppStarterTemplateTheme, MaterialTheme.typography |
-| 4    | ViewModel | Not included in starter          |
-| 5    | Retrofit  | Not included in starter          |
-
----
-
-## Suggested Extensions
-- Replace counter with a real utility (e.g., hydration tracker, timer)  
-- Add a ViewModel for state management  
-- Use SharedPreferences or DataStore to persist settings  
-- Add a simple API call using Retrofit (e.g., fetch weather or quotes)  
-
----
-
-## 📚 License
-This template is provided for educational use in CP3406.  
-Feel free to modify and extend it for your assessment.
+## 📚 Course Details
+**Student**: [Your Name/ID]
+**Subject**: CP3406/CP5307 Assessment 3
+**Template Source**: CP3406 Utility App Starter Template
