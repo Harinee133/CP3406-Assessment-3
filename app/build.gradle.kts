@@ -11,8 +11,8 @@ android {
     namespace = "au.edu.jcu.cp3406_cp5307_utilityappstartertemplate"
     compileSdk = 36
     
-    // Changing build directory to bypass file lock
-    layout.buildDirectory.set(file("build_new"))
+    // Fixed Clean Build Directory
+    layout.buildDirectory.set(file("build_final"))
 
     defaultConfig {
         applicationId = "au.edu.jcu.cp3406_cp5307_utilityappstartertemplate"
